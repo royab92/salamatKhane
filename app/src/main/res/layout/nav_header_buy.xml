@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        app:layout_marginTopPercent="40%"
+        app:layout_marginRightPercent="5%"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:textColor="@color/orange"
+        android:layout_toLeftOf="@+id/imageView"
+        app:layout_marginRightPercent="3%"
+        android:layout_alignParentTop="true"
+        app:layout_marginTopPercent="40%"
+        android:textStyle="bold"
+        android:textSize="10pt"
+        android:textAlignment="center"
+        android:text="داروخانه دکتر بیژن"
+        />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/orange"
+        app:layout_marginTopPercent="2%"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/imageView"
+        app:layout_marginRightPercent="10%"
+        android:layout_below="@+id/store"
+       android:layout_centerHorizontal="true"
+        android:textSize="8pt"
+        android:textAlignment="center"
+        android:text="نام کاربر: مهمان" />
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SalamatKhane</string>
+    <string name="sellinfo">کالای مورد نظر خود را برای <u>فروش</u> ثبت کنید</string>
+    <string name="buyinfo"><u>درخواست خرید </u>خود را ثبت کنید</string>
+    <string name="title_activity_buy"></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Notifications</string>
+    <string name="title_activity_sell"></string>
+    <string name="title_activity_my_buy">MyBuyActivity</string>
+    <string name="title_activity_my_sell">MySellActivity</string>
+</resources>

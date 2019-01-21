@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditInfoActivity"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/imageView"
+        app:layout_widthPercent="58%"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        app:layout_marginTopPercent="3%"
+        app:srcCompat="@drawable/salamatkhanelogo" />
+
+    <TextView
+        android:id="@+id/textView"
+        app:layout_widthPercent="83%"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="5%"
+        android:textSize="11pt"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        android:textAlignment="center"
+        android:text="اطلاعات مسئول داروخانه را در فرم زیر وارد کنید" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        app:layout_marginEndPercent="9%"
+        app:layout_marginTopPercent="8%"
+        android:text="نام"
+        android:textSize="9pt"
+        android:textStyle="bold"
+        android:textColor="@color/gray"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentRight="true"
+        app:layout_marginRightPercent="9%"
+        app:layout_marginTopPercent="10%"
+        android:text="نام خانوادگی"
+        android:textSize="9pt"
+        android:textStyle="bold"
+        android:textColor="@color/gray"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/name"
+        app:layout_widthPercent="60%"
+        app:layout_heightPercent="6%"
+        android:layout_alignParentEnd="true"
+        app:layout_marginEndPercent="9%"
+        android:layout_below="@+id/textView2"
+        android:inputType="textPersonName"
+        android:text=""
+        android:background="@drawable/edittext"
+        android:textSize="9pt"
+        android:textStyle="bold"
+        android:textColor="@drawable/textfield"
+        android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/family"
+        app:layout_widthPercent="60%"
+        app:layout_heightPercent="6%"
+        android:layout_alignParentEnd="true"
+        app:layout_marginEndPercent="9%"
+        android:layout_below="@+id/textView3"
+        android:inputType="textPersonName"
+        android:text=""
+        android:background="@drawable/edittext"
+        android:textSize="9pt"
+        android:textStyle="bold"
+        android:textColor="@drawable/textfield"
+        android:textAlignment="center"/>
+    <Button
+        android:id="@+id/button3"
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="6%"
+        android:layout_below="@id/family"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        app:layout_marginTopPercent="8%"
+        android:text="ثبت اطلاعات تماس"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        android:background="@drawable/button"
+        android:onClick="clickSave"/>
+</android.support.percent.PercentRelativeLayout>

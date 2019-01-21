@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="صفحه های اصلی"
+        android:id="@+id/title1"
+        >
+        <menu>
+            <item
+                android:id="@+id/sellrequest"
+                android:icon="@color/gback"
+                android:title="همه درخواست های فروش" />
+            <item
+                android:id="@+id/buyrequest"
+                android:title="همه درخواست های خرید" />
+            <item
+                android:id="@+id/stsell"
+                android:title="درخواست های فروش داروخانه" />
+            <item
+                android:id="@+id/stbuy"
+                android:title="درخواست های خرید داروخانه" />
+            <item
+                android:id="@+id/prerequest"
+                android:title="درخواست های پیش نویس" />
+        </menu>
+    </item>
+    <item android:title="پروفایل ها" android:id="@+id/title2">
+        <menu>
+            <item
+                android:id="@+id/editstore"
+                android:icon="@color/gback"
+                android:title="ویرایش اطلاعات داروخانه" />
+            <item
+                android:id="@+id/editinfo"
+                android:title="ویرایش اطلاعات من" />
+            <item
+                android:id="@+id/account"
+                android:title="وضعیت اشتراک داروخانه" />
+            <item
+                android:id="@+id/logout"
+                android:title="خروج" />
+        </menu>
+    </item>
+    <item android:title="سلامتخانه" android:id="@+id/title3">
+        <menu>
+            <item
+                android:id="@+id/rules"
+                android:icon="@color/gback"
+                android:title="قوانین و مقررات" />
+            <item
+                android:id="@+id/about"
+                android:title="درباره سلامتخانه" />
+            <item
+                android:id="@+id/contact"
+                android:title="تماس با پشتیبانی" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/version"
+        android:icon="@color/orange"
+        android:title="نسخه"
+        android:checkable="false">
+
+    </item>
+</menu>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gback">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="7%"
+        android:background="@color/orange"
+        android:layout_alignParentTop="true"
+        app:layout_marginTopPercent="3%"
+        android:text="" />
+    <ImageView
+        android:id="@+id/imageView15"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="5%"
+        android:layout_alignParentTop="true"
+        app:layout_marginTopPercent="5%"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/salamatkhanelogow" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="14%"
+        android:layout_below="@+id/textView12"
+        android:background="@color/white"
+        />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        app:layout_marginTopPercent="2%"
+        android:layout_below="@+id/textView12"
+        app:layout_marginRightPercent="5%"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/orange"
+        android:layout_toLeftOf="@+id/imageView"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginTopPercent="3%"
+        android:layout_below="@+id/textView12"
+        android:textStyle="bold"
+        android:textSize="9pt"
+        android:textAlignment="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="داروخانه دکتر بیژن"
+        />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/orange"
+        app:layout_marginTopPercent="1%"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/imageView"
+        app:layout_marginRightPercent="10%"
+        android:layout_below="@+id/store"
+        android:layout_centerHorizontal="true"
+        android:textSize="7pt"
+        android:gravity="center_horizontal|center_vertical"
+        android:textAlignment="center"
+        android:text="نام کاربر: مهمان" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_alignParentRight="true"
+        android:alpha="0.5"
+      android:paddingRight="15dp"
+        android:gravity="right|center_vertical"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/gray"
+        android:textSize="8pt"
+        android:text="صفحه های اصلی" />
+    <TextView
+        android:id="@+id/sellrequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title1"
+        android:layout_alignParentRight="true"
+        android:paddingRight="25dp"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/gray"
+        android:onClick="clickitem"
+        android:textSize="7pt"
+        android:text="همه درخواست های فروش" />
+    <TextView
+        android:id="@+id/buyrequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sellrequest"
+        android:layout_alignParentRight="true"
+        android:paddingRight="25dp"
+        android:gravity="right|center_vertical"
+        android:onClick="clickitem"
+        android:textColor="@color/gray"
+        android:textSize="7pt"
+        android:text="همه درخواست های خرید" />
+    <TextView
+        android:id="@+id/stsell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buyrequest"
+        android:layout_alignParentRight="true"
+        android:paddingRight="25dp"
+        android:gravity="right|center_vertical"
+        android:onClick="clickitem"
+        android:textColor="@color/gray"
+        android:textSize="7pt"
+        android:text="درخواست های فروش داروخانه" />
+    <TextView
+        android:id="@+id/stbuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stsell"
+        android:layout_alignParentRight="true"
+        android:paddingRight="25dp"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/gray"
+        android:onClick="clickitem"
+        android:textSize="7pt"
+        android:text="درخواست های خرید داروخانه" />
+    <TextView
+        android:id="@+id/prerequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stbuy"
+        android:layout_alignParentRight="true"
+        android:paddingRight="25dp"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/gray"
+        android:onClick="clickitem"
+        android:textSize="7pt"
+        android:text="درخواست های پیش نویس" />
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prerequest"
+        android:layout_alignParentRight="true"
+        android:paddingRight="15dp"
+        android:gravity="right|center_vertical"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/gray"
+        android:alpha="0.5"
+        android:textSize="8pt"
+        android:text="پروفایل ها" />
+        <TextView
+            android:id="@+id/editstore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title2"
+            android:layout_alignParentRight="true"
+            android:paddingRight="25dp"
+            android:gravity="right|center_vertical"
+            android:onClick="clickitem"
+            android:textColor="@color/gray"
+            android:textSize="7pt"
+            android:text="ویرایش اطلاعات داروخانه" />
+        <TextView
+            android:id="@+id/editinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editstore"
+            android:layout_alignParentRight="true"
+            android:paddingRight="25dp"
+            android:gravity="right|center_vertical"
+            android:onClick="clickitem"
+            android:textColor="@color/gray"
+            android:textSize="7pt"
+            android:text="ویرایش اطلاعات من" />
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editinfo"
+            android:paddingRight="25dp"
+            android:gravity="right|center_vertical"
+            android:onClick="clickitem"
+            android:textColor="@color/gray"
+            android:textSize="7pt"
+            android:text="وضعیت اشتراک داروخانه" />
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account"
+            android:layout_alignParentRight="true"
+            android:paddingRight="25dp"
+            android:gravity="right|center_vertical"
+            android:onClick="clickitem"
+            android:textColor="@color/gray"
+            android:textSize="7pt"
+            android:text="خروج" />
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logout"
+        android:layout_alignParentRight="true"
+        android:paddingRight="15dp"
+        android:gravity="right|center_vertical"
+        android:textStyle="bold"
+        android:alpha="0.5"
+        android:textColor="@color/white"
+        android:background="@color/gray"
+        android:textSize="8pt"
+        android:text="معرفی" />
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title4"
+        android:layout_alignParentRight="true"
+        android:paddingRight="25dp"
+        android:gravity="right|center_vertical"
+        android:onClick="clickitem"
+        android:textColor="@color/gray"
+        android:textSize="7pt"
+        android:text="معرفی کارمند داروخانه" />
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/intro"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:gravity="right|center_vertical"
+            android:textStyle="bold"
+            android:alpha="0.5"
+            android:textColor="@color/white"
+            android:background="@color/gray"
+            android:textSize="8pt"
+            android:text="سلامتخانه" />
+        <TextView
+            android:id="@+id/rules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title3"
+            android:layout_alignParentRight="true"
+            android:paddingRight="25dp"
+            android:gravity="right|center_vertical"
+            android:onClick="clickitem"
+            android:textColor="@color/gray"
+            android:textSize="7pt"
+            android:text="قوانین و مقررات" />
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rules"
+            android:layout_alignParentRight="true"
+            android:paddingRight="25dp"
+            android:gravity="right|center_vertical"
+            android:onClick="clickitem"
+            android:textColor="@color/gray"
+            android:textSize="7pt"
+            android:text="درباره سلامتخانه" />
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about"
+            android:layout_alignParentRight="true"
+            android:paddingRight="25dp"
+            android:gravity="right|center_vertical"
+            android:onClick="clickitem"
+            android:textColor="@color/gray"
+            android:textSize="7pt"
+            android:text="تماس با پشتیبانی" />
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_below="@+id/contact"
+            android:gravity="center_horizontal|center_vertical"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/orange"
+            android:textSize="8pt"
+            android:text="نسخه ۱.۰" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        app:layout_widthPercent="5%"
+        app:layout_heightPercent="3%"
+        android:layout_alignParentTop="true"
+        app:layout_marginTopPercent="6%"
+        android:layout_alignParentRight="true"
+        app:layout_marginRightPercent="5%"
+        app:srcCompat="@drawable/close"
+        android:clickable="true"
+        android:onClick="clickexit"/>
+
+
+</android.support.percent.PercentRelativeLayout>
+
